@@ -1,0 +1,100 @@
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #1a1a1a;
+}
+
+.banner {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  background: url(./../../../../assets/images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.banner > .form {
+  width: 60%;
+  height: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 40px 50px;
+  background-color: #222;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #00000056;
+}
+
+.form > span {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.form > .search-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form > .search-box > .search-1 {
+  width: 500px;
+}
+
+.form > .search-box > .search-2 {
+  width: 200px;
+}
+
+.form > .search-box > .button {
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.form > .search-box > .search-1 > input , .search-2 > input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 15px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #555;
+  border-radius: 10px;
+  outline: none;
+}
+
+.form > .search-box > .search-1 > input::placeholder , .search-2 > input::placeholder {
+  font-size: 1rem;
+}
+
+.form > .search-box > .search-1 > input:focus , .search-2 > input:focus {
+  border: 2px solid #ebc805;
+}
+
+.form > .search-box > .search-1 > span , .search-2 > span {
+  font-size: .8rem;
+  font-weight: 400;
+  color: #999;
+}
+
+.form .search-box .button a {
+  width: 100%;
+  padding: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(to right bottom, #b19913, #d4b816, #ebc805);
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00000099;
+}

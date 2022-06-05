@@ -13,17 +13,15 @@ a {
 }
 
 nav {
-  width: 100vw;
-  height: 10vh;
-  background-color: #212121;
-}
-
-header {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: 130px;
+  padding: 10px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #181818;
+  border-bottom: 1px solid #00000056;
+  z-index: 10;
 }
 
 .logo {
@@ -35,24 +33,81 @@ header {
 }
 
 .logo > h1 {
-  font-size: 4.5em;
-  font-weight: 500;
+  font-size: 4.8em;
+  font-weight: 900;
   font-family: 'Poiret One';
   color: #efefef;
-  // text-transform: uppercase;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-shadow: -8px 8px 20px #fff;
 }
 
 .menu {
-  width: 400px;
+  width: 800px;
   height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+.menu::before {
+  content: '';
+  width: 80px;
+  height: 3px;
+  margin-right: 30px;
+  background-color: #b19913;
+}
+
+.menu::after {
+  content: '';
+  width: 80px;
+  height: 3px;
+  margin-left: 30px;
+  background-color: #b19913;
+}
+
+.menu ul li a.active-link {
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(to right bottom, #b19913, #d4b816, #ebc805);
+}
+
+.menu .fa-building, .fa-plane, .fa-suitcase, .fa-sign-in, .fa-user-circle-o {
+  margin-right: 5px;
+}
+
 .menu > ul > li > a {
   font-size: 1.2rem;
   font-weight: 300;
-  padding: 10px 30px;
+  padding: 8px 30px;
+  color: #fafafaa6;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  transition: all ease .3s;
+}
+
+.menu > ul > li > a:hover {
+  font-size: 1.3rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.account {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account > ul > li > a {
+  font-size: .9rem;
+  font-weight: 300;
+  padding: 8px 15px;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: all ease .3s;
+}
+
+.account > ul > li > a:hover {
   color: #fafafaa6;
 }
