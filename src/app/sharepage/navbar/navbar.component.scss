@@ -13,26 +13,25 @@ a {
 }
 
 nav {
-  width: auto;
-  height: 130px;
-  padding: 10px 40px;
+  width: 100%;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #181818;
   border-bottom: 1px solid #00000056;
-  z-index: 10;
+  z-index: 100;
 }
 
 .logo {
   width: auto;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .logo > h1 {
+  margin: 8px;
   font-size: 4.8em;
   font-weight: 900;
   font-family: 'Poiret One';
@@ -44,7 +43,6 @@ nav {
 
 .menu {
   width: 800px;
-  height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -93,7 +91,6 @@ nav {
 
 .account {
   width: auto;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
