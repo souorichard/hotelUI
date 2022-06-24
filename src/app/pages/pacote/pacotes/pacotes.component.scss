@@ -1,0 +1,225 @@
+a {
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1a1a1a;
+}
+
+.banner {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  background: url(./../../../../assets/images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.banner > .form {
+  width: 60%;
+  height: 250px;
+  padding: 40px 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: #222;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #00000056;
+}
+
+.form > span {
+  margin-bottom: 12px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.form > .search-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form > .search-box > .search-1 {
+  width: 500px;
+}
+
+.form > .search-box > .search-2 {
+  width: 200px;
+}
+
+.form > .search-box > .button {
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.form > .search-box > .search-1 > input , .search-2 > input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 15px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #555;
+  border-radius: 10px;
+  outline: none;
+}
+
+.form > .search-box > .search-1 > input::placeholder , .search-2 > input::placeholder {
+  font-size: 1rem;
+}
+
+.form > .search-box > .search-1 > input:focus , .search-2 > input:focus {
+  border: 2px solid #ebc805;
+}
+
+.form > .search-box > .search-1 > span , .search-2 > span {
+  font-size: .8rem;
+  font-weight: 400;
+  color: #999;
+}
+
+.form .search-box .button a {
+  width: 100%;
+  padding: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(to right bottom, #b19913, #d4b816, #ebc805);
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00000099;
+}
+
+.content {
+  width: 80%;
+  height: 1000px;
+  padding: 30px 40px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  background-color: #2b2a2a7c;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.headContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headContent > span {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.headContent > button {
+  width: 8%;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #d4b816;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all ease .3s;
+}
+
+.headContent > button:hover {
+  background-color: #d4b816;
+}
+
+.bodyContent {
+  width: 100%;
+  height: 830px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.rowCards {
+  width: 100%;
+  height: 48%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 20%;
+  height: 100%;
+  padding: 20px;
+  background-color: #55555525;
+  border-radius: 15px;
+  box-shadow: 0 0 30px #00000056;
+  transition: all ease .3s;
+}
+
+.card:hover {
+  border: 1px solid #ebc805;
+  transform: scale(1.02);
+}
+
+.img {
+  width: 100%;
+  height: 50%;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+}
+
+.text-buy {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p-name {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.p-price {
+  font-size: 1.3rem;
+  color: #999;
+}
+
+.text-buy > button {
+  width: 70%;
+  height: 35px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #ebc805;
+  background-color: transparent;
+  border-radius: 15px;
+  cursor: pointer;
+}
