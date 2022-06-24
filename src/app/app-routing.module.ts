@@ -3,10 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '', loadChildren: () => import('./pages/hotel/hotel.module').then(m => m.HotelModule)
-  },
-
-  {
     path: 'hotel', loadChildren: () => import('./pages/hotel/hotel.module').then(m => m.HotelModule)
   },
 
@@ -16,6 +12,10 @@ const routes: Routes = [
 
   {
     path: 'pacote', loadChildren: () => import('./pages/pacote/pacote.module').then(m => m.PacoteModule)
+  },
+
+  {
+    path: '', redirectTo: 'hotel', pathMatch: 'full'
   }
 ];
 

@@ -18,7 +18,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 20px 30px;
-  background: url(./../../../../assets/images/banner.jpg);
+  background: url(./../../../../assets/images/banner2.jpg);
   background-position: center;
   background-size: cover;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
@@ -53,7 +53,11 @@ main {
 }
 
 .form > .search-box > .search-1 {
-  width: 500px;
+  width: 250px;
+}
+
+.form > .search-box > .search-1-2{
+  width: 250px;
 }
 
 .form > .search-box > .search-2 {
@@ -66,7 +70,7 @@ main {
   align-items: center;
 }
 
-.form > .search-box > .search-1 > input , .search-2 > input {
+.form > .search-box > .search-1 > input , .search-1-2 > input,  .search-2 > input {
   width: 100%;
   margin-top: 5px;
   padding: 15px;
@@ -78,15 +82,15 @@ main {
   outline: none;
 }
 
-.form > .search-box > .search-1 > input::placeholder , .search-2 > input::placeholder {
+.form > .search-box > .search-1 > input::placeholder , .search-1-2 > input, .search-2 > input::placeholder {
   font-size: 1rem;
 }
 
-.form > .search-box > .search-1 > input:focus , .search-2 > input:focus {
+.form > .search-box > .search-1 > input:focus , .search-1-2 > input:focus, .search-2 > input:focus {
   border: 2px solid #ebc805;
 }
 
-.form > .search-box > .search-1 > span , .search-2 > span {
+.form > .search-box > .search-1 > span , .search-1-2 > span, .search-2 > span {
   font-size: .8rem;
   font-weight: 400;
   color: #999;
@@ -193,33 +197,55 @@ main {
 
 .text-buy {
   width: 100%;
-  height: 50%;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.p-name {
-  margin-top: 15px;
-  font-size: 1.2rem;
-  text-align: center;
-  color: #fff;
+.destiny {
+  font-size: .8rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, .4);
 }
 
-.p-price {
-  font-size: 1.3rem;
-  color: #999;
+.name {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #ffffffdd;
 }
 
-.text-buy > button {
-  width: 70%;
-  height: 35px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #fff;
-  border: 1px solid #ebc805;
-  background-color: transparent;
-  border-radius: 15px;
-  cursor: pointer;
+.buy-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.buy-content > span {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, .4);
+}
+
+.buy-content > b {
+  margin-top: 5px;
+  color: #ffffffdd;
+}
+
+.buy-content b > small {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.buy-content b > span {
+  margin-left: 10px;
+  font-size: 1.9rem;
+  letter-spacing: 1px;
+}
+
+.destination {
+  margin-top: 10px;
+  font-size: .8rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, .4);
 }
