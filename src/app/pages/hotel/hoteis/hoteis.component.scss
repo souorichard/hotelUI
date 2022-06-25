@@ -4,6 +4,7 @@ a {
 
 main {
   width: 100%;
+  padding-top: 8em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,6 +103,11 @@ main {
   background: linear-gradient(to right bottom, #b19913, #d4b816, #ebc805);
   border-radius: 10px;
   box-shadow: 0 0 20px #00000099;
+  transition: all ease .3s;
+}
+
+.form .search-box .button a:hover {
+  background: linear-gradient(to left top, #b19913, #d4b816, #ebc805);
 }
 
 .content {
@@ -215,6 +221,7 @@ main {
 
 .buy-content {
   width: 100%;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
 }

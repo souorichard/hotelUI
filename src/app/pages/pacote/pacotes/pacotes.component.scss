@@ -4,6 +4,7 @@ a {
 
 main {
   width: 100%;
+  padding-top: 8em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +19,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 20px 30px;
-  background: url(./../../../../assets/images/banner.jpg);
+  background: url(./../../../../assets/images/banner3.jpg);
   background-position: center;
   background-size: cover;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
@@ -54,11 +55,21 @@ main {
 }
 
 .form > .search-box > .search-1 {
-  width: 500px;
+  width: 250px;
+}
+
+.form > .search-box > .search-1-2{
+  width: 250px;
 }
 
 .form > .search-box > .search-2 {
-  width: 200px;
+  width: 180px;
+}
+
+.form > .search-box > .fa-map-marker {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #888;
 }
 
 .form > .search-box > .button {
@@ -67,7 +78,7 @@ main {
   align-items: center;
 }
 
-.form > .search-box > .search-1 > input , .search-2 > input {
+.form > .search-box > .search-1 > input , .search-1-2 > input,  .search-2 > input {
   width: 100%;
   margin-top: 5px;
   padding: 15px;
@@ -79,15 +90,15 @@ main {
   outline: none;
 }
 
-.form > .search-box > .search-1 > input::placeholder , .search-2 > input::placeholder {
+.form > .search-box > .search-1 > input::placeholder , .search-1-2 > input, .search-2 > input::placeholder {
   font-size: 1rem;
 }
 
-.form > .search-box > .search-1 > input:focus , .search-2 > input:focus {
+.form > .search-box > .search-1 > input:focus , .search-1-2 > input:focus, .search-2 > input:focus {
   border: 2px solid #ebc805;
 }
 
-.form > .search-box > .search-1 > span , .search-2 > span {
+.form > .search-box > .search-1 > span , .search-1-2 > span, .search-2 > span {
   font-size: .8rem;
   font-weight: 400;
   color: #999;
@@ -102,6 +113,11 @@ main {
   background: linear-gradient(to right bottom, #b19913, #d4b816, #ebc805);
   border-radius: 10px;
   box-shadow: 0 0 20px #00000099;
+  transition: all ease .3s;
+}
+
+.form .search-box .button a:hover {
+  background: linear-gradient(to left top, #b19913, #d4b816, #ebc805);
 }
 
 .content {
@@ -185,6 +201,16 @@ main {
   height: 50%;
 }
 
+.img span {
+  font-weight: 500;
+  color: #ffffffdd;
+  position: absolute;
+  padding: 3px 9px;
+  background-color: #d4b816;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
 .img img {
   width: 100%;
   height: 100%;
@@ -202,6 +228,7 @@ main {
 
 .destiny {
   font-size: .8rem;
+  text-transform: uppercase;
   font-weight: 300;
   color: rgba(255, 255, 255, .4);
 }
@@ -215,6 +242,7 @@ main {
 
 .buy-content {
   width: 100%;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -224,6 +252,10 @@ main {
   font-size: 1rem;
   font-weight: 300;
   color: rgba(255, 255, 255, .4);
+}
+
+.buy-content s {
+  color: rgba(255, 255, 255, .2);
 }
 
 .buy-content > b {
@@ -246,5 +278,6 @@ main {
   margin-top: 10px;
   font-size: .8rem;
   font-weight: 300;
+  text-transform: uppercase;
   color: rgba(255, 255, 255, .4);
 }
