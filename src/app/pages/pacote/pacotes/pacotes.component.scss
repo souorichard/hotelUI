@@ -146,22 +146,40 @@ main {
   letter-spacing: 1px;
 }
 
-.headContent > button {
-  width: 8%;
-  height: 40px;
+.btnBox {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid #d4b816;
+  border-radius: 15px;
+}
+
+.btnBox .nacional, .btnBox .internacional {
+  width: 50%;
+  padding: 8px;
   font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 1px;
   color: #fff;
   background-color: transparent;
-  border: 2px solid #d4b816;
-  border-radius: 25px;
-  cursor: pointer;
+  border: none;
   transition: all ease .3s;
 }
 
-.headContent > button:hover {
+.btnBox .nacional {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: 1px solid #d4b816;
   background-color: #d4b816;
+}
+
+.btnBox .internacional {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: 1px solid #d4b816;
+}
+
+.btnBox .internacional:hover {
+  background-color: rgba(0, 0, 0, .4);
 }
 
 .bodyContent {

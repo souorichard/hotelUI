@@ -46,7 +46,7 @@ nav {
 }
 
 .menu {
-  width: 800px;
+  width: 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -54,7 +54,7 @@ nav {
 
 .menu::before {
   content: '';
-  width: 80px;
+  width: 10%;
   height: 3px;
   margin-right: 30px;
   background-color: #b19913;
@@ -62,7 +62,7 @@ nav {
 
 .menu::after {
   content: '';
-  width: 80px;
+  width: 10%;
   height: 3px;
   margin-left: 30px;
   background-color: #b19913;
