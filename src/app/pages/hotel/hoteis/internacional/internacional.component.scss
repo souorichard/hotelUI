@@ -19,7 +19,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 20px 30px;
-  background: url(./../../../../assets/images/banner.jpg);
+  background: url(./../../../../../assets/images/banner.jpg);
   background-position: center;
   background-size: cover;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
@@ -165,16 +165,16 @@ main {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-right: 1px solid #d4b816;
-  background-color: #d4b816;
 }
 
 .btnBox a .internacional {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-left: 1px solid #d4b816;
+  background-color: #d4b816;
 }
 
-.btnBox a .internacional:hover {
+.btnBox a .nacional:hover {
   background-color: rgba(0, 0, 0, .4);
 }
 
